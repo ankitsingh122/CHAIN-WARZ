@@ -33,7 +33,7 @@ function Subscribe() {
       
           <div className='lg:mx-44 mx-8  font-style font-semibold text-white  '>
             <div>
-              <div className='lg:text-8xl text-4xl  font-bold mt-56'>SUBSCRIBE</div>
+              <div className='lg:text-8xl text-4xl  font-bold md:mt-56 mt-10'>SUBSCRIBE</div>
               <div className='lg:text-md text-sm mt-6'>TO BE AUTOMATICALLY NOTIFIED OF</div>
               <div className='text-sm'>UPCOMING BATTLES</div>
               <div className='lg:text-md mt-10 text-sm'>E-MAIL</div>

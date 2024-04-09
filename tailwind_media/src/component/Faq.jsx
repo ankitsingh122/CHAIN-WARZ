@@ -29,7 +29,7 @@ function Faq() {
   return (
     <div className='bg-custom w-screen h-full flex justify-center items-center'>
       <div className="w-full mx-44  mt-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 text-white text-center font-style">FAQ</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 text-white text-center font-style"data-aos='fade-top'>FAQ</h1>
         <div className="space-y-6">
           {questions.map((item, index) => (
             <div key={index} className="faq-item">

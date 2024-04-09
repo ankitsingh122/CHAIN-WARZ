@@ -10,9 +10,13 @@ function Startbattle() {
             <div className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-style">
               JOIN BATTLE
             </div>
+            
           </div>
+          
         </div>
-        <img class="w-60 mt-5" src={Timer} alt="" />
+        <div className="flex mx-10">
+         <img class="w-60 mt-5" src={Timer} alt="" />
+       </div>
       </div>
     </div>
   );

@@ -14,11 +14,11 @@ function Team() {
     <div className='bg-custom w-screen h-full'>
 
       <div className='flex justify-center'>
-        <div className='text-white text-6xl font-style mt-16 flex justify-center'>THE TEAM</div>
+        <div className='text-white text-6xl font-style mt-16 flex justify-center'data-aos='fade-top'>THE TEAM</div>
       </div>
 
-      <div className='font-style lg:flex justify-center mt-20 ' data-aos='fade-right'>
-        <div className=' border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+      <div className='font-style lg:flex justify-center mt-20 ' >
+        <div className=' border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-right'>
           <div className='flex justify-center'>
             <img className='' src={Pink} alt="" />
           </div>
@@ -29,7 +29,7 @@ function Team() {
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20' data-aos='fade-right'>
           <div className='flex justify-center'>
             <img className='' src={R2} alt="" />
           </div>
@@ -40,7 +40,7 @@ function Team() {
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20' data-aos='fade-right'>
           <div className='flex justify-center'>
             <img className='' src={R3} alt="" />
           </div>
@@ -51,7 +51,7 @@ function Team() {
           </div>
         </div>
 
-         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-right'>
           <div className='flex justify-center'>
             <img className='' src={R4} alt="" />
           </div>
@@ -63,8 +63,8 @@ function Team() {
         </div>
       </div>
       <div>
-        <div className='font-style lg:flex justify-center mt-20'data-aos='fade-left'>
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+        <div className='font-style lg:flex justify-center mt-20'>
+        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
           <div className='flex justify-center'>
             <img className='' src={C1} alt="" />
           </div>
@@ -75,7 +75,7 @@ function Team() {
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
           <div className='flex justify-center'>
             <img className='' src={C2} alt="" />
           </div>
@@ -86,7 +86,7 @@ function Team() {
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
           <div className='flex justify-center'>
             <img className='' src={C3} alt="" />
           </div>
@@ -97,7 +97,7 @@ function Team() {
           </div>
         </div>
 
-         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'>
+         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
           <div className='flex justify-center'>
             <img className='' src={C4} alt="" />
           </div>

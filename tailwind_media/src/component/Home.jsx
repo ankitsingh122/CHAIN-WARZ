@@ -20,7 +20,7 @@ function Home() {
           </div>
           <div className=" md:flex space-x-4">
             
-            <div className="md:bg-gradient-to-r from-blue-400 to-purple-500  md:px-3 md:py-3.5 md:rounded-md md:cursor-pointer md:text-center md:pr-5 md:pl-5 md:font-style md:text-lg text-white">
+            <div className="hidden lg:block md:bg-gradient-to-r from-blue-400 to-purple-500  md:px-3 md:py-3.5 md:rounded-md md:cursor-pointer md:text-center md:pr-5 md:pl-5 md:font-style md:text-lg text-white">
               Connect
             </div>
             <div className="text-3xl md:p-2 py-2 px-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl   text-gray-800 cursor-pointer ">
@@ -30,10 +30,10 @@ function Home() {
         </nav>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div className="md:text-3xl font-style font-semi-bold mt-24 text-white">
+        <div className="md:text-3xl font-style font-semi-bold mt-24 text-white"data-aos="zoom-in-up">
           WELCOME TO
         </div>
-        <div className=" md:text-9xl text-5xl font-style  font-bold text-white tracking-widest ">
+        <div className=" md:text-9xl text-5xl font-style  font-bold text-white tracking-widest text-center "data-aos="zoom-in-up">
           CHAIN WARZ
         </div>
       </div>
