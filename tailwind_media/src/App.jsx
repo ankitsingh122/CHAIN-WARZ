@@ -25,7 +25,7 @@ const App = () => {
  });
  }, []);
   return (
-    <div>
+    <div className="overflow-x-hidden">
     <Home/>
     <Works/>
     <Startbattle/>

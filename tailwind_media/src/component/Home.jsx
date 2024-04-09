@@ -39,7 +39,7 @@ function Home() {
       </div>
       <div>
         <div className="flex justify-center relative mt-24">
-          <img  class= "absolute" src= {Robot} alt="" />
+          <img  class= "absolute" data-aos='fade-top' src= {Robot} alt="" />
         <img class='' src={Circle} alt="" />
         
 
