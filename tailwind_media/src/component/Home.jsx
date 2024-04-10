@@ -48,7 +48,7 @@ function Home() {
             </button>
 
             {isMenuOpen && (
-              <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center">
+              <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center ">
                 <div className="bg-white rounded-lg px-10 mr-6 py-6 text-center shadow-lg">
                   <button  onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
                   <div className="text-[#002e87] text-lg cursor-pointer mb-4">
@@ -76,8 +76,8 @@ function Home() {
               </div>
             )}
             {isAllowed &&(
-             <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center -my-36">
-                <div className="  bg-[#002e87] rounded-lg px-5 mr-6 py-10 text-center shadow-lg">
+             <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center md:-my-28">
+                <div className="  bg-[#002e87] rounded-lg px-5 md:mr-6 mr-8 py-10 text-center shadow-lg">
                   <div className="text-white text-lg mb-4">
                     CONNECT
                   </div>
