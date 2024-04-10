@@ -53,9 +53,9 @@ function Subscribe() {
           </div>
           
     
-          <div className='grid-col-2'>
+          <div>
             <div className=' lg:flex justify-end'>
-              <img className='lg:mx-60 lg:mt-40'data-aos='fade-top' src={Ap} alt="" />
+              <img className=' lg:mx-60 lg:mt-40'data-aos='fade-top' src={Ap} alt="" />
             </div>
           </div>
         </div>

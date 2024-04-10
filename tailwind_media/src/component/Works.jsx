@@ -11,7 +11,7 @@ function works() {
         <div>
       <div className=" flex justify-center items-center flex-col mt-28">
         
-        <div className="flex justify center md:w-1/2">
+        <div className="flex justify center md:w-1/2 ">
           <img
             class="md:w-[300px] md:h-[300px] w-44 mx-10 object-cover"data-aos='slide-right'
             src="https://s3-alpha-sig.figma.com/img/b0b3/a9ad/91b0a75dd8facad6dc7967201d798a95?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nAZdtlAfyY72Yug0zXcNr8aE8ndJzJGFOOUdJxLW2g5JGNwY7lVZDxkPuTuM2fnm5z2Tsj1UsyXMXj6NCdFvQYPEfT38lDoR96e2zttu7aoIb9vYkeFaYsYat5AzlrOJpEXWY2iqbRXH64dCm2HUK8QKSkm-7PnLJ-0udgca-UNsMDMic4PojF7WjwI56EyfUoONWdhPJFBFtoEFpFxscXXjT74wdG8mkw4IS0zBw7WRWLj1xv0h7URyWN-1-PjojVX~RJDeSZKX0xOj24usmyBdebDOLnRLg7CIeiY9T6MAj63Qv9lBAA64fEaYYSoKxmREYyHvsdPoxDxN4yjUVg__"
