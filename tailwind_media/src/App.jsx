@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import PageError from "./pages/PageError";
 import LandingPage from "./pages/LandingPage";
+import Leaderboard from "./pages/Leaderboard";
+
 
 const App = () => {
   useEffect(() => {
@@ -17,16 +19,7 @@ const App = () => {
       <div className="overflow-x-hidden">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/" element={<Works />} />
-          <Route path="/" element={<Startbattle />} />
-          <Route path="/" element={<Statistic />} />
-          <Route path="/" element={<Prizepool />} />
-          <Route path="/" element={<About />} />
-          <Route path="/" element={<Team />} />
-          <Route path="/" element={<Subscribe />} />
-          <Route path="/" element={<Faq />} />
-          <Route path="/" element={<Audit />} />
-          <Route path="/" element={<Join />} /> */}
+           <Route path="/Leaderboard" element={<Leaderboard />} />
           <Route path="*" element={<PageError />} />
         </Routes>
       </div>
