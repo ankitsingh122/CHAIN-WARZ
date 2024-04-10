@@ -77,28 +77,28 @@ function Home() {
             )}
             {isAllowed &&(
              <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center md:-my-28">
-                <div className="  bg-[#002e87] rounded-lg px-5 md:mr-6 mr-8 py-10 text-center shadow-lg">
-                  <div className="text-white text-lg mb-4">
+                <div className="  bg-[#002e87] rounded-3xl px-5 md:mr-6 mr-8 py-10 text-center shadow-lg">
+                  <div className="text-white text-lg mb-4 font-style font-bold">
                     CONNECT
                   </div>
-                  <div className="text-white text-sm mb-4 text-center">
+                  <div className="text-white text-sm mb-4 text-center font-style font-bold">
                     CHOOSE A WALLET <br /> CONNECTION METHOD
                   </div>
                  <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 " > <img src={Cat} alt="" />
-                 <div className="text-xl mt-5 pr-3">METAMASK</div>
+                 <div className="md:text-xl mt-5 pr-3 font-style">METAMASK</div>
                   </div>
                   <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 " > <img src={Coin} alt="" />
-                 <div className="text-xl mt-5 pr-3">COINBASE</div>
+                 <div className="md:text-xl mt-5 pr-3 font-style">COINBASE</div>
                   </div>
                   <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 " > <img src={Wallet} alt="" />
-                 <div className="text-xl mt-5 pr-3">WALLETCONNECT</div>
+                 <div className="md:text-xl mt-5 pr-3 font-style">WALLETCONNECT</div>
                   </div>
                   
                   <button
                     onClick={toggleAllowed}
-                    className=" text-red-500 text-lg cursor-pointer mt-4 focus:outline-none"
+                    className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style"
                   >
-                    Close
+                    CLOSE
                   </button>
                 </div>
               </div>
