@@ -3,6 +3,7 @@ import Home from '../component/Home'
 import Works from '../component/Works'
 import Startbattle from '../component/Startbattle'
 import Statistic from '../component/Statistic'
+import Prizepool from '../component/Prizepool'
 import About from '../component/About'
 import Team from '../component/Team'
 import Subscribe from '../component/Subscribe'
@@ -17,6 +18,7 @@ function LandingPage() {
       <Works/>
       <Startbattle/>
       <Statistic/>
+      <Prizepool/>
       <About/>
       <Team/>
       <Subscribe/>
