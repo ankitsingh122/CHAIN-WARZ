@@ -2,27 +2,34 @@ import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import Robot from "../assets/Robot.png";
 import Circle from "../assets/Circle.png";
+import Cat from '../assets/Cat.png'
+import Wallet from '../assets/Wallet.png'
+import Coin from '../assets/Coin.png'
 import { IoMdPerson } from "react-icons/io";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const [isAllowed, setIsAllowed] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const toggleAllowed = () => {
+    setIsAllowed(!isAllowed)
+  }
 
   return (
     <div className="bg-gradient-to-tr from-red-500 via-purple-500 to-blue-500 w-screen h-full py-10 ">
       <div className="flex justify-center">
-        <nav className="fixed z-50 py-1 w-max bg-white text-black   rounded-3xl px-5 flex justify-between ">
+        <nav className="fixed z-50 py-4 w-max bg-white text-black   rounded-3xl px-5 flex justify-between ">
           <Link to='/'><img src={Logo} alt="" /></Link> 
           <div className="hidden md:flex space-x-16 text-md mt-2 mx-14  py-2 font-mono font-semibold  text-lg">
-            <div className="cursor-pointer">AllowList</div>
-            <div className="cursor-pointer">Minting</div>
+            <button  onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
+            <div className="cursor-pointer">Winners</div>
             <Link to="/leaderboard" className="cursor-pointer">Leaderboard</Link>
-            <div className="cursor-pointer">Battle</div>
+            <div className="cursor-pointer">Battle Now</div>
           </div>
 
           <div className="md:flex space-x-4">
@@ -43,11 +50,9 @@ function Home() {
             {isMenuOpen && (
               <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center">
                 <div className="bg-white rounded-lg px-10 mr-6 py-6 text-center shadow-lg">
+                  <button  onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
                   <div className="text-[#002e87] text-lg cursor-pointer mb-4">
-                    AllowList
-                  </div>
-                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">
-                    Minting
+                    Winners
                   </div>
                    <Link to="/leaderboard" className="cursor-pointer">Leaderboard</Link>
                   <div className="text-[#002e87] text-lg cursor-pointer mb-4">
@@ -63,6 +68,34 @@ function Home() {
                   </div>
                   <button
                     onClick={toggleMenu}
+                    className=" text-red-500 text-lg cursor-pointer mt-4 focus:outline-none"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+            {isAllowed &&(
+             <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center -my-36">
+                <div className="  bg-[#002e87] rounded-lg px-5 mr-6 py-10 text-center shadow-lg">
+                  <div className="text-white text-lg mb-4">
+                    CONNECT
+                  </div>
+                  <div className="text-white text-sm mb-4 text-center">
+                    CHOOSE A WALLET <br /> CONNECTION METHOD
+                  </div>
+                 <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 " > <img src={Cat} alt="" />
+                 <div className="text-xl mt-5 pr-3">METAMASK</div>
+                  </div>
+                  <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 " > <img src={Coin} alt="" />
+                 <div className="text-xl mt-5 pr-3">COINBASE</div>
+                  </div>
+                  <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 " > <img src={Wallet} alt="" />
+                 <div className="text-xl mt-5 pr-3">WALLETCONNECT</div>
+                  </div>
+                  
+                  <button
+                    onClick={toggleAllowed}
                     className=" text-red-500 text-lg cursor-pointer mt-4 focus:outline-none"
                   >
                     Close
