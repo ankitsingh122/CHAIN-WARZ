@@ -1,7 +1,37 @@
 import React from "react";
-import Timer from "../assets/Timer.png";
+import  { useState, useEffect } from 'react';
 
 function Startbattle() {
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  function calculateTimeLeft() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+   
+    const nextResetHours = (hours < 12) ? 12 : 24;
+    const hoursLeft = nextResetHours - (hours % 12);
+    const minutesLeft = 59 - minutes;
+    const secondsLeft = 59 - seconds;
+
+    return {
+      hours: hoursLeft,
+      minutes: minutesLeft,
+      seconds: secondsLeft
+    };
+  }
+
+  
   return (
     <div className=" bg-custom  w-screen h-full flex justify-center">
       <div className="mt-32">
@@ -15,7 +45,10 @@ function Startbattle() {
           
         </div>
         <div className="flex mx-10">
-         <img class="w-60 mt-5" src={Timer} alt="" />
+         <div className='flex justify-center font-style text-4xl px-10 py-2 mt-10 border-gradient border-4  bg-black text-white '>
+      
+      <p>{`${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes.toString().padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</p>
+    </div>
        </div>
       </div>
     </div>

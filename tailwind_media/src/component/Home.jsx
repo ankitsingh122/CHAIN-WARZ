@@ -27,15 +27,15 @@ function Home() {
           <Link to='/'><img src={Logo} alt="" /></Link> 
           <div className="hidden md:flex space-x-16 text-md mt-2 mx-14  py-2 font-mono font-semibold  text-lg">
             <button  onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
-            <div className="cursor-pointer">Winners</div>
+             <Link to="/Winner" className="cursor-pointer">Winner</Link>
             <Link to="/leaderboard" className="cursor-pointer">Leaderboard</Link>
             <div className="cursor-pointer">Battle Now</div>
           </div>
 
           <div className="md:flex space-x-4">
-            <div className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  md:px-3 md:py-3.5 md:rounded-md md:cursor-pointer md:text-center md:pr-5 md:pl-5 md:font-style md:text-lg text-white">
+            <button onClick={toggleAllowed} className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  md:px-3 md:py-3.5 md:rounded-md md:cursor-pointer md:text-center md:pr-5 md:pl-5 md:font-style md:text-lg text-white">
               Connect
-            </div>
+            </button>
 
             <div className="hidden md:flex text-3xl md:p-2 py-2 px-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer md:pt-2 pt-1">
               <IoMdPerson className="text-white mt-1 w-6" />
@@ -59,7 +59,7 @@ function Home() {
                     Battle
                   </div>
                   <div className="flex justify-center mt-6">
-                    <button className="text-lg border-2 border-[#002e87] px-7 py-2 rounded-3xl text-[#002e87] cursor-pointer mr-4">
+                    <button onClick={toggleAllowed} className="text-lg border-2 border-[#002e87] px-7 py-2 rounded-3xl text-[#002e87] cursor-pointer mr-4">
                       Connect
                     </button>
                     <button className="text-lg bg-[#002e87] px-7 py-2 rounded-3xl text-white cursor-pointer">
