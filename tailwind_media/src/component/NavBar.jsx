@@ -48,7 +48,7 @@ function NavBar() {
               <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center ">
                 <div className="bg-white rounded-lg px-10 mr-6 py-6 text-center shadow-lg">
                   <button  onClick={toggleAllowed} className="cursor-pointer mt-2">AllowList</button>
-                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">Winners </div>
+                      <Link to="/Winner" className="cursor-pointer">Winner</Link>
                    <Link to="/leaderboard" className="cursor-pointer text-blue-900">Leaderboard</Link>
                   <div className="text-[#002e87] text-lg cursor-pointer mb-4">Battle</div>
                   <div className="flex justify-center mt-6">
