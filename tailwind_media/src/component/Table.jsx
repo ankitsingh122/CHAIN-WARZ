@@ -2,8 +2,8 @@ import React from "react";
 
 function Table() {
   return (
-    <div >
-         <div className="flex space-x-7 font-semibold mt-12 font-mono">
+    <div className="font-style" >
+         <div className="flex space-x-7 font-semibold mt-12">
             <div className="flex-1 ">Position</div>
             <div className="flex-1">Name</div>
             <div className="flex-1">Multiplier</div>

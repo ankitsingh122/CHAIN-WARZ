@@ -50,26 +50,21 @@ function Home() {
             {isMenuOpen && (
               <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center ">
                 <div className="bg-white rounded-lg px-10 mr-6 py-6 text-center shadow-lg">
-                  <button  onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
-                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">
-                    Winners
-                  </div>
-                   <Link to="/leaderboard" className="cursor-pointer">Leaderboard</Link>
-                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">
-                    Battle
-                  </div>
+                  <button  onClick={toggleAllowed} className="cursor-pointer mt-2">AllowList</button>
+                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">Winners </div>
+                   <Link to="/leaderboard" className="cursor-pointer text-blue-900">Leaderboard</Link>
+                  <div className="text-[#002e87] text-lg cursor-pointer mb-4">Battle</div>
                   <div className="flex justify-center mt-6">
-                    <button onClick={toggleAllowed} className="text-lg border-2 border-[#002e87] px-7 py-2 rounded-3xl text-[#002e87] cursor-pointer mr-4">
+                    <button onClick={toggleAllowed} className="text-lg font-style border-black border-2  bg-gradient-to-r from-blue-400 to-purple-500 px-7 py-2 rounded-3xl text-black cursor-pointer mr-4">
                       Connect
                     </button>
-                    <button className="text-lg bg-[#002e87] px-7 py-2 rounded-3xl text-white cursor-pointer">
+                    <button className="text-lg font-style border-black border-2  bg-gradient-to-r from-blue-400 to-purple-500 px-7 py-2 rounded-3xl text-black cursor-pointer">
                       Profile
                     </button>
                   </div>
                   <button
                     onClick={toggleMenu}
-                    className=" text-red-500 text-lg cursor-pointer mt-4 focus:outline-none"
-                  >
+                    className=" text-red-500 text-lg cursor-pointer mt-4 focus:outline-none">
                     Close
                   </button>
                 </div>
@@ -96,8 +91,7 @@ function Home() {
                   
                   <button
                     onClick={toggleAllowed}
-                    className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style"
-                  >
+                    className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style">
                     CLOSE
                   </button>
                 </div>

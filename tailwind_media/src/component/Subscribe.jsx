@@ -54,8 +54,8 @@ function Subscribe() {
           
     
           <div>
-            <div className=' lg:flex justify-end'>
-              <img className=' lg:mx-60 lg:mt-40'data-aos='fade-top' src={Ap} alt="" />
+            <div className=' md:flex justify-end'>
+              <img className='hidden md:block md:mx-60 md:mt-40'data-aos='fade-top' src={Ap} alt="" />
             </div>
           </div>
         </div>
