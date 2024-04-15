@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import NavBar from '../component/NavBar';
 import { Link } from "react-router-dom";
 import A1 from '../assets/A1.png';
+import A2 from "../assets/A2.png";
+import A3 from "../assets/A3.png";
 import ETH from '../assets/ETH.png';
 import Join from '../component/Join'
 function Battle() {
@@ -40,23 +42,37 @@ function Battle() {
           <NavBar />
         </div>
       </div>
-      <div className="text-4xl md:text-6xl text-white flex justify-center mt-44">
+      <div
+        className="text-4xl md:text-6xl text-white flex justify-center mt-44"
+        data-aos="fade-top"
+      >
         BATTLES
       </div>
       <div className="flex justify-between mx-5 md:mx-20 mt-10 md:text-2xl">
         <div className="flex space-x-6">
-          <div className="text-white">Arena</div>
-          <div className="text-white">Boss Fight</div>
+          <div
+            className="text-white hover:text-cyan-500 cursor-pointer"
+            data-aos="fade-top"
+          >
+            Arena
+          </div>
+          <div
+            className="text-white hover:text-cyan-500 cursor-pointer"
+            data-aos="fade-top"
+          >
+            Boss Fight
+          </div>
         </div>
         <Link
           to="/Winner"
           className="text-white flex justify-end bg-gradient-to-tr from-red-500 via-purple-500 to-blue-500 px-2 py-1 rounded-lg cursor-pointer"
+          data-aos="fade-top"
         >
           Winner
         </Link>
       </div>
       <div className="md:flex justify-center md:mx-[800px] mx-2 md:space-x-5 mt-20">
-        <div className="border mt-5">
+        <div className="border mt-5" data-aos="slide-right">
           <div className="flex justify-center mt-3 ml-3">
             <img className="" src={A1} alt="" />
           </div>
@@ -100,9 +116,9 @@ function Battle() {
           </div>
         </div>
 
-        <div className="border mt-5">
+        <div className="border mt-5" data-aos="fade-top">
           <div className="flex justify-center mt-3 ml-3">
-            <img className="" src={A1} alt="" />
+            <img className="" src={A2} alt="" />
           </div>
           <div className="flex justify-center mt-5">
             <div className="text-white">
@@ -144,9 +160,9 @@ function Battle() {
           </div>
         </div>
 
-        <div className="border mt-5">
+        <div className="border mt-5" data-aos="slide-left">
           <div className="flex justify-center mt-3 ml-3">
-            <img className="" src={A1} alt="" />
+            <img className="" src={A3} alt="" />
           </div>
           <div className="flex justify-center mt-5">
             <div className="text-white">

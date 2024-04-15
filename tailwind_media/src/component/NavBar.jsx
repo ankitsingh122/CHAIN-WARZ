@@ -74,9 +74,9 @@ function NavBar() {
                 >
                   Leaderboard
                 </Link>
-                <div className="text-[#002e87] text-lg cursor-pointer mb-4">
-                  Battle
-                </div>
+                <Link to="/Battle" className="cursor-pointer">
+                  Battle now
+                </Link>
               </div>
               <div className="flex justify-center mt-6">
                 <button
