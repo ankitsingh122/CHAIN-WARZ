@@ -34,7 +34,9 @@ function NavBar() {
         <Link to="/leaderboard" className="cursor-pointer">
           Leaderboard
         </Link>
-        <div className="cursor-pointer">Battle Now</div>
+        <Link to="/Battle" className="cursor-pointer">
+          Battle now
+        </Link>
       </div>
 
       <div className="md:flex space-x-4">
