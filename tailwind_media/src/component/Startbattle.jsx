@@ -47,7 +47,7 @@ function Startbattle() {
         <div className="flex mx-10">
          <div className='flex justify-center font-style text-4xl px-10 py-2 mt-10 border-gradient border-4  bg-black text-white '>
       
-      <p>{`${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes.toString().padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</p>
+      <div>{`${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes.toString().padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
     </div>
        </div>
       </div>

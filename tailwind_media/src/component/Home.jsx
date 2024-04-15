@@ -29,7 +29,7 @@ function Home() {
         <button onClick={toggleAllowed} className="cursor-pointer">AllowList</button>
         <Link to="/Winner" className="cursor-pointer">Winner</Link>
         <Link to="/leaderboard" className="cursor-pointer">Leaderboard</Link>
-        <div className="cursor-pointer">Battle Now</div>
+        <Link to="/Battle" className="cursor-pointer">Battle now</Link>
       </div>
 
       <div className="md:flex space-x-4">
@@ -101,8 +101,7 @@ function Home() {
         )}
       </div>
     </nav>
-  );
-}
+
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
         <div className="md:text-3xl font-style font-semi-bold mt-24 text-white" data-aos="zoom-in-up">

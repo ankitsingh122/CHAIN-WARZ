@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Pink from '../assets/Pink.png';
 import R2 from '../assets/R2.png';

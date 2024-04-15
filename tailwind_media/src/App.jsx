@@ -6,6 +6,7 @@ import PageError from "./pages/PageError";
 import LandingPage from "./pages/LandingPage";
 import Leaderboard from "./pages/Leaderboard";
 import Winner from './pages/Winner'
+import Battle from './pages/Battle'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<LandingPage/>}/>
            <Route path="/Leaderboard" element={<Leaderboard/>}/>
            <Route path="/Winner" element={<Winner/>}/>
+            <Route path="/Battle" element={<Battle/>}/>
           <Route path="*" element={<PageError />}/>
         </Routes>
       </div>

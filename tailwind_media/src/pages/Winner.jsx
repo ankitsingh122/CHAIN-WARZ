@@ -37,7 +37,7 @@ function Winner() {
 
     
     </div>
-    <div className='border-4  mt-5 mx-3 rounded-md md:mx-44 md:mt-8'data-aos='fade-top'>
+    <div className='border-4  mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
     <div className='text-white'>JERRY </div>
     <div className='text-white flex'> <img src={ETH} alt="" />0.0015 ETH</div>
@@ -62,7 +62,7 @@ function Winner() {
     <div className='text-gray-400 flex justify-center md:hidden'data-aos='fade-top'>5:30 am</div>
  </div>
 
-   <div className='border-4 mt-5 mx-3 rounded-md md:mx-44 md:mt-8'data-aos='fade-top'>
+   <div className='border-4 mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
     <div className='text-white'>JERRY </div>
     <div className='text-white flex '> <img src={ETH} alt="" />0.0015 ETH</div>
@@ -87,7 +87,7 @@ function Winner() {
     <div className='text-gray-400 flex justify-center md:hidden'data-aos='fade-top'>5:30 am</div>
  </div>
 
-  <div className='border-4 mt-5 mx-3 rounded-md md:mx-44 md:mt-8'data-aos='fade-top'>
+  <div className='border-4 mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
     <div className='text-white'>JERRY </div>
     <div className='text-white flex'> <img src={ETH} alt="" />0.0015 ETH</div>
