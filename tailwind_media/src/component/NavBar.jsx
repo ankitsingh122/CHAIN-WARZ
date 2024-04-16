@@ -139,15 +139,14 @@ function NavBar() {
               <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 ">
                 {" "}
                 <img src={Wallet} alt="" />
-                <div className="md:text-xl text-sm md:mt-5 mt-8 md:pr-3 pr-24 font-style">
+                <div className="md:text-xl text-sm md:mt-5 mt-8 md:pr-3 pr-2 font-style">
                   WALLETCONNECT
                 </div>
               </div>
 
               <button
                 onClick={toggleAllowed}
-                className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style"
-              >
+                className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style">
                 CLOSE
               </button>
             </div>
