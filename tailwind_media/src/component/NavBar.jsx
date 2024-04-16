@@ -20,12 +20,12 @@ function NavBar() {
   };
 
   return (
-    <nav className="fixed z-50 py-4 w-max bg-white text-black   rounded-3xl px-5 flex justify-between ">
+    <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between ">
       <Link to="/">
         <img src={Logo} alt="" />
       </Link>
-      <div className="hidden md:flex space-x-16 text-md mt-2 mx-14  py-2 font-mono font-semibold  text-lg">
-        <button onClick={() => toggleAllowed()} className="cursor-pointer">
+      <div className="hidden md:flex lg:space-x-16 space-x-6 lg:text-md  mt-2 lg:mx-14 mx-2  py-2 font-mono font-semibold  text-sm">
+        <button onClick={toggleAllowed} className="cursor-pointer -mt-3">
           AllowList
         </button>
         <Link to="/Winner" className="cursor-pointer">
@@ -42,7 +42,7 @@ function NavBar() {
       <div className="md:flex space-x-4">
         <button
           onClick={toggleAllowed}
-          className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  md:px-3 md:py-3.5 md:rounded-md md:cursor-pointer md:text-center md:pr-5 md:pl-5 md:font-style md:text-lg text-white"
+          className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  lg:px-3 lg:py-3.5 px-2  md:rounded-md md:cursor-pointer md:text-center lg:pr-5 lg:pl-5 md:font-style lg:text-lg text-white"
         >
           Connect
         </button>
@@ -59,7 +59,7 @@ function NavBar() {
         </button>
 
         {isMenuOpen && (
-          <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center ">
+          <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center "data-aos='zoom-in'>
             <div className="bg-white rounded-lg px-10 mr-6 py-6 text-center shadow-lg">
               <div className="flex flex-col items-center">
                 <button onClick={toggleAllowed} className="cursor-pointer mt-2">
@@ -99,7 +99,7 @@ function NavBar() {
           </div>
         )}
         {isAllowed && (
-          <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center md:-my-28">
+          <div className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center md:-my-28"data-aos='zoom-in'>
             <div className="  bg-[#002e87] rounded-3xl px-5 md:mr-6 mr-8 py-10 text-center shadow-lg">
               <div className="text-white text-lg mb-4 font-style font-bold">
                 CONNECT

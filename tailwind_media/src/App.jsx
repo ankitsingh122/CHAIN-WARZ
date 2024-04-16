@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import Leaderboard from "./pages/Leaderboard";
 import Winner from './pages/Winner'
 import Battle from './pages/Battle'
+import BossFight from './pages/BossFight'
 
 
 const App = () => {
@@ -20,11 +21,13 @@ const App = () => {
     <Router>
       <div className="overflow-x-hidden">
         <Routes>
-          <Route path="/" element={<LandingPage/>}/>
-           <Route path="/Leaderboard" element={<Leaderboard/>}/>
-           <Route path="/Winner" element={<Winner/>}/>
-            <Route path="/Battle" element={<Battle/>}/>
-          <Route path="*" element={<PageError />}/>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/Leaderboard" element={<Leaderboard />} />
+          <Route path="/Winner" element={<Winner />} />
+          <Route path="/Battle" element={<Battle />} />
+          <Route path="/BossFight" element={<BossFight />} />
+
+          <Route path="*" element={<PageError />} />
         </Routes>
       </div>
     </Router>

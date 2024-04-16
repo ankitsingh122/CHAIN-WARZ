@@ -5,7 +5,8 @@ import A1 from '../assets/A1.png';
 import A2 from "../assets/A2.png";
 import A3 from "../assets/A3.png";
 import ETH from '../assets/ETH.png';
-import Join from '../component/Join'
+import Join from '../component/Join';
+
 function Battle() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -50,18 +51,21 @@ function Battle() {
       </div>
       <div className="flex justify-between mx-5 md:mx-20 mt-10 md:text-2xl">
         <div className="flex space-x-6">
-          <div
+          <Link
+            to="/Battle"
             className="text-white hover:text-cyan-500 cursor-pointer"
             data-aos="fade-top"
           >
             Arena
-          </div>
-          <div
+          </Link>
+
+          <Link
+            to="/BossFight"
             className="text-white hover:text-cyan-500 cursor-pointer"
             data-aos="fade-top"
           >
             Boss Fight
-          </div>
+          </Link>
         </div>
         <Link
           to="/Winner"
@@ -71,7 +75,7 @@ function Battle() {
           Winner
         </Link>
       </div>
-      <div className="md:flex justify-center md:mx-[800px] mx-2 md:space-x-5 mt-20">
+      <div className="lg:flex justify-center  mx-2 lg:space-x-5 mt-20">
         <div className="border mt-5" data-aos="slide-right">
           <div className="flex justify-center mt-3 ml-3">
             <img className="" src={A1} alt="" />

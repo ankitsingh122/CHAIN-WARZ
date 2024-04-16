@@ -30,7 +30,7 @@ function Subscribe() {
         <div className="bg-gradient-to-tr from-blue-900 via-blue-900 to-blue-500 mt-24 w-screen h-full mx-14  rounded-lg flex ">
           <div className="lg:mx-44 mx-8  font-style font-semibold text-white  ">
             <div>
-              <div className="lg:text-8xl text-4xl  font-bold md:mt-56 mt-10">
+              <div className="lg:text-8xl text-4xl  font-bold md:mt-56 mt-10 ">
                 SUBSCRIBE
               </div>
               <div className="lg:text-md text-sm mt-6">
@@ -61,9 +61,9 @@ function Subscribe() {
           </div>
 
           <div>
-            <div className=" md:flex justify-end">
+            <div className=" lg:flex justify-end">
               <img
-                className="hidden md:block md:mx-60 md:mt-40"
+                className="hidden md:block lg:mx-60 md:mt-40"
                 data-aos="fade-top"
                 src={Ap}
                 alt=""

@@ -1,5 +1,6 @@
 import React from "react";
 import  { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 function Startbattle() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -37,19 +38,25 @@ function Startbattle() {
       <div className="mt-32">
         <div className="flex justify-center">
           <div className="bg-white  w-max rounded-3xl">
-            <div className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-style">
+            <Link
+              to="/Battle"
+              className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-style cursor-pointer"
+            >
               JOIN BATTLE
-            </div>
-            
+            </Link>
           </div>
-          
         </div>
         <div className="flex mx-10">
-         <div className='flex justify-center font-style text-4xl px-10 py-2 mt-10 border-gradient border-4  bg-black text-white '>
-      
-      <div>{`${timeLeft.hours.toString().padStart(2, '0')}:${timeLeft.minutes.toString().padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`}</div>
-    </div>
-       </div>
+          <div className="flex justify-center font-style text-4xl px-10 py-2 mt-10 border-gradient border-4  bg-black text-white ">
+            <div>{`${timeLeft.hours
+              .toString()
+              .padStart(2, "0")}:${timeLeft.minutes
+              .toString()
+              .padStart(2, "0")}:${timeLeft.seconds
+              .toString()
+              .padStart(2, "0")}`}</div>
+          </div>
+        </div>
       </div>
     </div>
   );
