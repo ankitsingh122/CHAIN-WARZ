@@ -63,7 +63,7 @@ function NavBar() {
             className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center font-style "
             data-aos="zoom-in"
           >
-            <div className=" bg-white rounded-lg px-2 mr-6 py-6 -mx-2 text-center shadow-lg">
+            <div className=" bg-cyan-900 rounded-lg px-2 mr-6 py-6 -mx-2 text-center shadow-lg">
               <div className="flex flex-col items-center">
                 <button
                   onClick={toggleAllowed}
@@ -103,7 +103,7 @@ function NavBar() {
               </div>
               <button
                 onClick={toggleMenu}
-                className=" text-white bg-red-500 px-3 py-1 rounded-xl text-md cursor-pointer mt-4 focus:outline-none "
+                className=" text-white bg-black px-3 py-1 rounded-xl text-md cursor-pointer mt-4 focus:outline-none "
               >
                 CLOSE
               </button>
