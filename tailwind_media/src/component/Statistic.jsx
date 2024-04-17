@@ -6,7 +6,7 @@ function statistic() {
     <div className="bg-custom w-screen h-full flex justify-center">
       <div className="mt-40 ">
         <div
-          className=" text-6xl text-white flex justify-center font-bold font-style"
+          className=" md:text-6xl text-4xl text-white flex justify-center font-bold font-style"
           data-aos="fade-top"
         >
           STATISTICS

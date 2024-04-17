@@ -19,7 +19,7 @@ function Home() {
           WELCOME TO
         </div>
         <div
-          className="md:text-9xl text-5xl font-style  font-bold text-white tracking-widest text-center"
+          className="lg:text-9xl text-4xl md:text-7xl font-style  font-bold text-white tracking-widest text-center"
           data-aos="zoom-in-up"
         >
           CHAIN WARZ

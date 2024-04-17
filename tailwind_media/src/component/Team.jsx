@@ -12,104 +12,172 @@ import Twitter from '../assets/Twitter.png';
 
 function Team() {
   return (
-    <div className='bg-custom w-screen h-full'>
-
-      <div className='flex justify-center'>
-        <div className='text-white text-6xl font-style mt-16 flex justify-center'data-aos='fade-top'>THE TEAM</div>
+    <div className="bg-custom w-screen h-full">
+      <div className="flex justify-center">
+        <div
+          className="text-white md:text-6xl text-4xl font-style mt-16 flex justify-center"
+          data-aos="fade-top"
+        >
+          THE TEAM
+        </div>
       </div>
 
-      <div className='font-style lg:flex justify-center mt-20 ' >
-        <div className=' border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-right'>
-          <div className='flex justify-center'>
-            <img className='' src={Pink} alt="" />
+      <div className="font-style lg:flex justify-center mt-20 ">
+        <div
+          className=" border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+          data-aos="fade-right"
+        >
+          <div className="flex justify-center">
+            <img className="" src={Pink} alt="" />
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
+          <div className="text-white flex justify-center text-3xl mt-10">
+            DREAMER
+          </div>
+          <div className="text-white flex justify-center text-center mt-10">
+            CO FOUNDER &amp; <br />
+            CEO
+          </div>
+          <div className="flex justify-center mt-10">
             <img src={Twitter} alt="" />
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20' data-aos='fade-right'>
-          <div className='flex justify-center'>
-            <img className='' src={R2} alt="" />
+        <div
+          className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+          data-aos="fade-right"
+        >
+          <div className="flex justify-center">
+            <img className="" src={R2} alt="" />
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
+          <div className="text-white flex justify-center text-3xl mt-10">
+            DREAMER
+          </div>
+          <div className="text-white flex justify-center text-center mt-10">
+            CO FOUNDER &amp; <br />
+            CEO
+          </div>
+          <div className="flex justify-center mt-10">
             <img src={Twitter} alt="" />
           </div>
         </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20' data-aos='fade-right'>
-          <div className='flex justify-center'>
-            <img className='' src={R3} alt="" />
+        <div
+          className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+          data-aos="fade-right"
+        >
+          <div className="flex justify-center">
+            <img className="" src={R3} alt="" />
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
+          <div className="text-white flex justify-center text-3xl mt-10">
+            DREAMER
+          </div>
+          <div className="text-white flex justify-center text-center mt-10">
+            CO FOUNDER &amp; <br />
+            CEO
+          </div>
+          <div className="flex justify-center mt-10">
             <img src={Twitter} alt="" />
           </div>
         </div>
 
-         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-right'>
-          <div className='flex justify-center'>
-            <img className='' src={R4} alt="" />
+        <div
+          className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+          data-aos="fade-right"
+        >
+          <div className="flex justify-center">
+            <img className="" src={R4} alt="" />
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
+          <div className="text-white flex justify-center text-3xl mt-10">
+            DREAMER
+          </div>
+          <div className="text-white flex justify-center text-center mt-10">
+            CO FOUNDER &amp; <br />
+            CEO
+          </div>
+          <div className="flex justify-center mt-10">
             <img src={Twitter} alt="" />
           </div>
         </div>
       </div>
       <div>
-        <div className='font-style lg:flex justify-center mt-20'>
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
-          <div className='flex justify-center'>
-            <img className='' src={C1} alt="" />
+        <div className="font-style lg:flex justify-center mt-20">
+          <div
+            className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+            data-aos="fade-left"
+          >
+            <div className="flex justify-center">
+              <img className="" src={C1} alt="" />
+            </div>
+            <div className="text-white flex justify-center text-3xl mt-10">
+              DREAMER
+            </div>
+            <div className="text-white flex justify-center text-center mt-10">
+              CO FOUNDER &amp; <br />
+              CEO
+            </div>
+            <div className="flex justify-center mt-10">
+              <img src={Twitter} alt="" />
+            </div>
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
-            <img src={Twitter} alt="" />
-          </div>
-        </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
-          <div className='flex justify-center'>
-            <img className='' src={C2} alt="" />
+          <div
+            className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+            data-aos="fade-left"
+          >
+            <div className="flex justify-center">
+              <img className="" src={C2} alt="" />
+            </div>
+            <div className="text-white flex justify-center text-3xl mt-10">
+              DREAMER
+            </div>
+            <div className="text-white flex justify-center text-center mt-10">
+              CO FOUNDER &amp; <br />
+              CEO
+            </div>
+            <div className="flex justify-center mt-10">
+              <img src={Twitter} alt="" />
+            </div>
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
-            <img src={Twitter} alt="" />
-          </div>
-        </div>
 
-        <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
-          <div className='flex justify-center'>
-            <img className='' src={C3} alt="" />
+          <div
+            className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+            data-aos="fade-left"
+          >
+            <div className="flex justify-center">
+              <img className="" src={C3} alt="" />
+            </div>
+            <div className="text-white flex justify-center text-3xl mt-10">
+              DREAMER
+            </div>
+            <div className="text-white flex justify-center text-center mt-10">
+              CO FOUNDER &amp; <br />
+              CEO
+            </div>
+            <div className="flex justify-center mt-10">
+              <img src={Twitter} alt="" />
+            </div>
           </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
-            <img src={Twitter} alt="" />
-          </div>
-        </div>
 
-         <div className='border mx-[20px] py-10 mt-10 rounded-3xl px-20'data-aos='fade-left'>
-          <div className='flex justify-center'>
-            <img className='' src={C4} alt="" />
-          </div>
-          <div className='text-white flex justify-center text-3xl mt-10'>DREAMER</div>
-          <div className='text-white flex justify-center text-center mt-10'>CO FOUNDER &amp; <br />CEO</div>
-          <div className='flex justify-center mt-10'>
-            <img src={Twitter} alt="" />
+          <div
+            className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
+            data-aos="fade-left"
+          >
+            <div className="flex justify-center">
+              <img className="" src={C4} alt="" />
+            </div>
+            <div className="text-white flex justify-center text-3xl mt-10">
+              DREAMER
+            </div>
+            <div className="text-white flex justify-center text-center mt-10">
+              CO FOUNDER &amp; <br />
+              CEO
+            </div>
+            <div className="flex justify-center mt-10">
+              <img src={Twitter} alt="" />
+            </div>
           </div>
         </div>
       </div>
-       </div>
     </div>
   );
 }
