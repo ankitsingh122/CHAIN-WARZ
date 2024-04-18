@@ -47,7 +47,7 @@ function NavBar() {
           Connect
         </button>
 
-        <div className="hidden md:flex text-3xl md:p-2 py-2 px-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer md:pt-2 pt-1">
+        <div className="hidden md:flex text-3xl  py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer md:pt-2 pt-Z">
           <IoMdPerson className="text-white mt-1 w-6" />
         </div>
 
@@ -146,7 +146,8 @@ function NavBar() {
 
               <button
                 onClick={toggleAllowed}
-                className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style">
+                className=" text-black font-bold  text-lg cursor-pointer mt-6 focus:outline-none bg-white rounded-2xl px-2 py-2 font-style"
+              >
                 CLOSE
               </button>
             </div>

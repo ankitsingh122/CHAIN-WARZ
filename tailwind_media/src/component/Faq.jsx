@@ -37,14 +37,14 @@ function Faq() {
                 className="flex items-center justify-between w-full border-b bg-custom p-8 md:p-10 shadow-md text-white font-style"
                 onClick={() => toggleQuestion(index)}
               >
-                <span className={`text-lg md:text-3xl font-semibold ${openIndex === index ? 'bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text' : ''}`}>{item.question}</span>
+                <span className={`text-md md:text-3xl  font-semibold ${openIndex === index ? 'bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text' : ''}`}>{item.question}</span>
                 <span className="gradient-border">
                   {openIndex === index ? '-' : '+'}
                 </span>
               </button>
               {openIndex === index && (
                 <div className="p-8 md:p-10 bg-custom-100 rounded-b-lg text-white border-t uppercase">
-                  <p className="text-lg md:text-xl font-style">{item.answer}</p>
+                  <p className="text-sm md:text-xl font-style">{item.answer}</p>
                 </div>
               )}
             </div>

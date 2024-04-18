@@ -81,7 +81,7 @@ function Battle() {
             <img className="" src={A1} alt="" />
           </div>
           <div className="flex justify-center mt-5">
-            <div className="text-white">
+            <div className="text-white ">
               ENTRY
               <br />
               PRICE

@@ -20,15 +20,16 @@ function Join() {
           <br /> and greatest battles in <br /> blockchain and participate in{" "}
           <br /> the action.
         </div>
-        <div className="flex justify-between mt-10 mx-2">
+        <div className="flex justify-between mt-10 mx-10  md:-mx-2 ">
+          
           <img
-            className="border px-10 py-10 rounded-lg"
+            className="border md:px-10 px-5 md:py-10 py-5 rounded-lg"
             data-aos="fade-left"
             src={Pk}
-            alt=""
+            alt=" "
           />
           <img
-            className="border px-10 py-10 rounded-lg"
+            className="border md:px-10 px-5 md:py-10 py-5  rounded-lg"
             data-aos="fade-right"
             src={Discord}
             alt=""
