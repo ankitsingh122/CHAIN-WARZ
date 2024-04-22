@@ -39,10 +39,10 @@ function Winner() {
     </div>
     <div className='border-4  mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
-    <div className='text-white'>JERRY </div>
+    <div className='text-white md:mt-2'>JERRY </div>
     <div className='text-white flex'> <img src={ETH} alt="" />0.0015 ETH</div>
-     <div className='text-white hidden md:block'>2</div>
-     <div className=' hidden md:block text-blue-400'>x23d2jeif2sdbkdv</div>
+     <div className='text-white hidden md:block mt-2'>2</div>
+     <div className=' hidden md:block text-blue-400 md:mt-2'>x23d2jeif2sdbkdv</div>
     <div className=' text-gray-400 hidden md:block'>March 07, 2024 <br />5:30 am</div>
     
     </div>
@@ -54,7 +54,7 @@ function Winner() {
        
      <div className='flex justify-between mx-9 mt-5  md:hidden'data-aos='fade-top'>
     <div className='text-white'>BATTLE HASH </div>
-    <div className='text-blue-400'>x23d2jeif2..</div>
+    <div className='text-blue-400 '>x23d2jeif2..</div>
    </div>
 
   
@@ -64,10 +64,10 @@ function Winner() {
 
    <div className='border-4 mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
-    <div className='text-white'>JERRY </div>
+    <div className='text-white md:mt-2'>JERRY </div>
     <div className='text-white flex '> <img src={ETH} alt="" />0.0015 ETH</div>
-     <div className='text-white hidden md:block'>2</div>
-     <div className='text-blue-400 hidden md:block'>x23d2jeif2sdbkdv</div>
+     <div className='text-white hidden md:block mt-2'>2</div>
+     <div className='text-blue-400 hidden md:block mt-2'>x23d2jeif2sdbkdv</div>
     <div className='text-gray-400 hidden md:block'>March 07, 2024 <br />5:30 am</div>
     
     </div>
@@ -89,10 +89,10 @@ function Winner() {
 
   <div className='border-4 mt-5 mx-3 rounded-3xl md:mx-44 md:mt-8'data-aos='fade-top'>
     <div className='flex justify-between mx-9 mt-2'>
-    <div className='text-white'>JERRY </div>
+    <div className='text-white md:mt-2'>JERRY </div>
     <div className='text-white flex'> <img src={ETH} alt="" />0.0015 ETH</div>
-     <div className='text-white hidden md:block'>2</div>
-     <div className='text-blue-400 hidden md:block'>x23d2jeif2sdbkdv</div>
+     <div className='text-white hidden md:block mt-2'>2</div>
+     <div className='text-blue-400 hidden md:block mt-2'>x23d2jeif2sdbkdv</div>
     <div className='text-gray-400 hidden md:block'>March 07, 2024 <br />5:30 am</div>
     
     </div>
