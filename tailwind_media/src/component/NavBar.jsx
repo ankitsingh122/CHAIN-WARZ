@@ -7,8 +7,8 @@ import Logo from "../assets/Logo.png";
 import Cat from "../assets/Cat.png";
 import Wallet from "../assets/Wallet.png";
 import Coin from "../assets/Coin.png";
-import { createWallet, inAppWallet } from "thirdweb/wallets";
-import { ConnectButton } from "thirdweb/react";
+import { createWallet, } from "thirdweb/wallets";
+
 
 
 
@@ -24,9 +24,7 @@ function NavBar() {
     setIsAllowed(!isAllowed);
   };
     const handleMetamaskClick = () => {
-      // Here you would typically use the Metamask API to trigger the wallet opening
-      // For demonstration purposes, let's assume there's a global function provided by Metamask
-      if (window.ethereum) {
+     if (window.ethereum) {
         window.ethereum.request({ method: "eth_requestAccounts" });
       }
     };
@@ -143,7 +141,7 @@ function NavBar() {
               </div>
               <div
                 onClick={handleMetamaskClick}
-                className=" bg-blue-700 rounded-lg flex justify-between space-x-20 "
+                className=" bg-blue-700 rounded-lg flex justify-between space-x-20 cursor-pointer "
               >
                 {" "}
                 <img src={Cat} alt="" />
@@ -151,14 +149,14 @@ function NavBar() {
                   METAMASK
                 </div>
               </div>
-              <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 ">
+              <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 cursor-pointer ">
                 {" "}
                 <img src={Coin} alt="" />
                 <div className="md:text-xl text-sm md:mt-5 mt-8 pr-3 font-style">
                   COINBASE
                 </div>
               </div>
-              <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 ">
+              <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 cursor-pointer">
                 {" "}
                 <img src={Wallet} alt="" />
                 <div className="md:text-xl text-sm md:mt-5 mt-8 md:pr-3 pr-2 font-style">
