@@ -7,6 +7,11 @@ import Logo from "../assets/Logo.png";
 import Cat from "../assets/Cat.png";
 import Wallet from "../assets/Wallet.png";
 import Coin from "../assets/Coin.png";
+import { createWallet, inAppWallet } from "thirdweb/wallets";
+import { ConnectButton } from "thirdweb/react";
+
+
+
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +23,20 @@ function NavBar() {
   const toggleAllowed = () => {
     setIsAllowed(!isAllowed);
   };
+    const handleMetamaskClick = () => {
+      // Here you would typically use the Metamask API to trigger the wallet opening
+      // For demonstration purposes, let's assume there's a global function provided by Metamask
+      if (window.ethereum) {
+        window.ethereum.request({ method: "eth_requestAccounts" });
+      }
+    };
+
+  
+  const wallets = [
+    createWallet("io.metamask", handleMetamaskClick), 
+    
+  ];
+ 
 
   return (
     <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between ">
@@ -122,7 +141,10 @@ function NavBar() {
               <div className="text-white text-sm mb-4 text-center font-style font-bold">
                 CHOOSE A WALLET <br /> CONNECTION METHOD
               </div>
-              <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 ">
+              <div
+                onClick={handleMetamaskClick}
+                className=" bg-blue-700 rounded-lg flex justify-between space-x-20 "
+              >
                 {" "}
                 <img src={Cat} alt="" />
                 <div className="md:text-xl text-sm md:mt-5 mt-8 pr-3 font-style">
@@ -154,6 +176,7 @@ function NavBar() {
           </div>
         )}
       </div>
+     
     </nav>
   );
 }

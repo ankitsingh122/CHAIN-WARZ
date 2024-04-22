@@ -10,6 +10,7 @@ import Battle from './pages/Battle'
 import BossFight from './pages/BossFight'
 
 
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/Winner" element={<Winner />} />
           <Route path="/Battle" element={<Battle />} />
           <Route path="/BossFight" element={<BossFight />} />
+
 
           <Route path="*" element={<PageError />} />
         </Routes>
