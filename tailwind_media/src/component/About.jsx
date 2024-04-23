@@ -11,7 +11,7 @@ function About() {
             </span>
             <br />{" "}
             <span
-              className="bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text "
+              className="bg-gradient-to-br from-red-500 via-purple-600 to-blue-500 inline-block text-transparent bg-clip-text "
               data-aos="fade-top"
             >
               1K SUPPLY
@@ -80,7 +80,7 @@ function About() {
         </div>
         <div className="flex justify-center -my-20">
           <div className="bg-white  w-max rounded-3xl">
-            <button className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-azonix ">
+            <button className=" bg-gradient-to-br from-red-500 via-purple-600 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-azonix ">
               OPENSEA
             </button>
           </div>

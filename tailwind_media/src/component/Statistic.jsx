@@ -11,7 +11,7 @@ function statistic() {
         >
           STATISTICS
         </div>
-        <div className="text-white bg-gradient-to-tr from-red-500 via-purple-500 to-blue-500 lg:py-32 lg:px-80 py-28 my-40 flex justify-center rounded-3xl ">
+        <div className="text-white bg-gradient-to-tr from-red-500 via-purple-600 to-blue-500 lg:py-32 lg:px-80 py-28 my-40 flex justify-center rounded-3xl ">
           <div className="relative w-56" data-aos="fade-top">
             <img className=" absolute w-56" src={Circle} alt="" />
             <img className="ml-12 mt-12 w-32 h-24" src={Cd} alt="" />

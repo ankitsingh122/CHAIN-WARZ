@@ -53,7 +53,7 @@ function Subscribe() {
             >
               <button
                 onClick={handleSubmit}
-                className="bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text text-2xl rounded-lg py-3 px-3 font-azonix"
+                className="bg-gradient-to-br from-red-500 via-purple-600 to-blue-500 inline-block text-transparent bg-clip-text text-2xl rounded-lg py-3 px-3 font-azonix"
               >
                 SUBSCRIBE
               </button>
