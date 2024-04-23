@@ -13,7 +13,7 @@ function Home() {
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
         <div
-          className="md:text-3xl font-azonix font-semi-bold mt-24 text-white font-outline-2 "
+          className="md:text-4xl font-azonix font-semi-bold mt-24 text-white font-outline-2 "
           data-aos="zoom-in-up"
         >
           WELCOME TO
