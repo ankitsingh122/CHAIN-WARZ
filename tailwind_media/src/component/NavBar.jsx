@@ -81,29 +81,29 @@ function NavBar() {
             className="fixed top-0 left-0  w-full h-full  bg-transparent z-50 flex justify-center items-center font-azonix "
             data-aos="zoom-in"
           >
-            <div className=" bg-cyan-900 rounded-lg px-2 mr-6 py-6 -mx-2 text-center shadow-lg">
+            <div className=" bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg px-2 mr-6 py-6 -mx-2 text-center shadow-lg">
               <div className="flex flex-col items-center">
                 <button
                   onClick={toggleAllowed}
-                  className="cursor-pointer text-lg bg-cyan-600 px-2 rounded-lg mt-2 text-white"
+                  className="cursor-pointer text-lg  px-2 rounded-lg mt-2 text-black bg-white"
                 >
                   ALLOW LIST
                 </button>
                 <Link
                   to="/Winner"
-                  className="cursor-pointer text-lg bg-cyan-600 px-2 rounded-lg mt-3 text-white"
+                  className="cursor-pointer text-lg  px-2 rounded-lg mt-3 text-black bg-white"
                 >
                   WINNER
                 </Link>
                 <Link
                   to="/leaderboard"
-                  className="cursor-pointer text-lg bg-cyan-600 px-2 rounded-lg mt-3 text-white"
+                  className="cursor-pointer text-lg  px-2 rounded-lg mt-3 text-black bg-white"
                 >
                   LEADERBOARD
                 </Link>
                 <Link
                   to="/Battle"
-                  className="cursor-pointer text-lg bg-cyan-600 px-2 rounded-lg mt-3 text-white"
+                  className="cursor-pointer text-lg  px-2 rounded-lg mt-3 text-black bg-white"
                 >
                   BATTLE NOW
                 </Link>
@@ -115,7 +115,7 @@ function NavBar() {
                 >
                   CONNECT
                 </button>
-                <button className="text-lg font-azonix border-black border-2  bg-cyan-600 px-7 py-2 rounded-3xl text-black cursor-pointer">
+                <button className="text-lg font-azonix border-black border-2 bg-purple-700 px-7 py-2 rounded-3xl text-white cursor-pointer">
                   PROFILE
                 </button>
               </div>
