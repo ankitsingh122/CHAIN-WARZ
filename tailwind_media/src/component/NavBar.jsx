@@ -40,10 +40,10 @@ function NavBar() {
   return (
     <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between ">
       <Link to="/">
-        <img src={Logo} alt="" />
+        <img className="md:w-32 lg:w-44" src={Logo} alt="" />
       </Link>
-      <div className="hidden md:flex lg:space-x-16 space-x-6 lg:text-md  mt-2 lg:mx-14 mx-2  py-2 font-azonix font-semibold  text-sm">
-        <button onClick={toggleAllowed} className="cursor-pointer -mt-3">
+      <div className="hidden md:flex lg:space-x-8 space-x-2 lg:text-md  mt-2 lg:mx-14 mx-2  py-2 font-azonix font-semibold  lg:text-sm text-xs">
+        <button onClick={toggleAllowed} className="cursor-pointer -mt-3 ">
           AllowList
         </button>
         <Link to="/Winner" className="cursor-pointer">
@@ -60,7 +60,7 @@ function NavBar() {
       <div className="md:flex space-x-4">
         <button
           onClick={toggleAllowed}
-          className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  lg:px-3 lg:py-3.5 px-2  md:rounded-md md:cursor-pointer md:text-center lg:pr-5 lg:pl-5 md:font-azonix lg:text-lg text-white"
+          className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  lg:px-3 lg:py-3.5 px-2  md:rounded-md md:cursor-pointer md:text-center lg:pr-5 lg:pl-5 md:font-azonix lg:text-lg text-xs text-white"
         >
           Connect
         </button>
