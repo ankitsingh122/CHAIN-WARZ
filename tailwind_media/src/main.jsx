@@ -2,12 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { ThirdwebProvider } from "thirdweb/react";
+
+import {
+  ThirdwebProvider,
+  metamaskWallet,
+  
+} from "@thirdweb-dev/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThirdwebProvider>
-      
+    <ThirdwebProvider
+      supportedWallets={[
+        metamaskWallet({
+          recommended: true,
+        }),
+       
+      ]}
+      clientId="<263ce4ddd19e94c4f99551c0effead31>"
+    >
       <App />
     </ThirdwebProvider>
   </React.StrictMode>

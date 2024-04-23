@@ -8,10 +8,17 @@ import Leaderboard from "./pages/Leaderboard";
 import Winner from './pages/Winner'
 import Battle from './pages/Battle'
 import BossFight from './pages/BossFight'
+import { createWallet } from "thirdweb/wallets";
 
 
+
+
+const wallets = [createWallet("io.metamask")];
 
 const App = () => {
+
+
+  
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -19,20 +26,23 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div className="overflow-x-hidden">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/Leaderboard" element={<Leaderboard />} />
-          <Route path="/Winner" element={<Winner />} />
-          <Route path="/Battle" element={<Battle />} />
-          <Route path="/BossFight" element={<BossFight />} />
+    <>
+     
 
+      <Router>
+        <div className="overflow-x-hidden">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/Leaderboard" element={<Leaderboard />} />
+            <Route path="/Winner" element={<Winner />} />
+            <Route path="/Battle" element={<Battle />} />
+            <Route path="/BossFight" element={<BossFight />} />
 
-          <Route path="*" element={<PageError />} />
-        </Routes>
-      </div>
-    </Router>
+            <Route path="*" element={<PageError />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 };
 

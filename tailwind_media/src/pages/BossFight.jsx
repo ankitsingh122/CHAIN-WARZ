@@ -95,7 +95,7 @@ function Battle() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex bg-white px-12 py-2 rounded-xl mt-3 text-xl ">
+            <div className="flex bg-white px-12 py-2 rounded-xl mt-3 text-xl cursor-pointer">
               Enter
             </div>
           </div>
