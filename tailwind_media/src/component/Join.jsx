@@ -5,7 +5,7 @@ import Discord from '../assets/Discord.png'
 function Join() {
   return (
     <div className="bg-custom w-screen h-full flex justify-center py-20">
-      <div className=" font-style">
+      <div className="font-azonix">
         <div
           className="text-white md:text-6xl text-4xl mt-24 flex justify-center"
           data-aos="fade-top"
@@ -21,7 +21,6 @@ function Join() {
           <br /> the action.
         </div>
         <div className="flex justify-between mt-10 mx-10  md:-mx-2 ">
-          
           <img
             className="border md:px-10 px-5 md:py-10 py-5 rounded-lg"
             data-aos="fade-left"

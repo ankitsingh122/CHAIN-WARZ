@@ -37,7 +37,7 @@ function Battle() {
   }
 
   return (
-    <div className="bg-custom w-screen h-full font-style">
+    <div className="bg-custom w-screen h-full font-azonix">
       <div className="flex justify-center">
         <div className="flex justify-center mt-10">
           <NavBar />
@@ -105,7 +105,7 @@ function Battle() {
             </div>
           </div>
           <div className="flex justify-center mx-10 mt-5">
-            <div className="flex justify-center font-style md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
+            <div className="flex justify-center font-azonix md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
               <div>{`${timeLeft.hours
                 .toString()
                 .padStart(2, "0")}:${timeLeft.minutes
@@ -149,7 +149,7 @@ function Battle() {
             </div>
           </div>
           <div className="flex justify-center mx-10 mt-5">
-            <div className="flex justify-center font-style md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
+            <div className="flex justify-center font-azonix md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
               <div>{`${timeLeft.hours
                 .toString()
                 .padStart(2, "0")}:${timeLeft.minutes
@@ -193,7 +193,7 @@ function Battle() {
             </div>
           </div>
           <div className="flex justify-center mx-10 mt-5">
-            <div className="flex justify-center font-style md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
+            <div className="flex justify-center font-azonix md:text-4xl text-3xl md:px-10 px-6 py-2 border-gradient border-4 bg-black text-white">
               <div>{`${timeLeft.hours
                 .toString()
                 .padStart(2, "0")}:${timeLeft.minutes

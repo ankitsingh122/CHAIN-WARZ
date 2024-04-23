@@ -15,14 +15,14 @@ function Team() {
     <div className="bg-custom w-screen h-full">
       <div className="flex justify-center">
         <div
-          className="text-white md:text-6xl text-4xl font-style mt-16 flex justify-center"
+          className="text-white md:text-6xl text-4xl font-azonix mt-16 flex justify-center"
           data-aos="fade-top"
         >
           THE TEAM
         </div>
       </div>
 
-      <div className="font-style lg:flex justify-center mt-20 ">
+      <div className="font-azonix lg:flex justify-center mt-20 ">
         <div
           className=" border mx-[20px] py-10 mt-10 rounded-3xl px-20"
           data-aos="fade-right"
@@ -100,7 +100,7 @@ function Team() {
         </div>
       </div>
       <div>
-        <div className="font-style lg:flex justify-center mt-20">
+        <div className="font-azonix lg:flex justify-center mt-20">
           <div
             className="border mx-[20px] py-10 mt-10 rounded-3xl px-20"
             data-aos="fade-left"

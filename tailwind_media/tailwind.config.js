@@ -10,7 +10,7 @@ export default {
         custom: '#070123',
       },
       fontFamily: {
-        style:['azonix']
+        'azonix': ['azonixregular', 'sans-serif'],
       }
 
       

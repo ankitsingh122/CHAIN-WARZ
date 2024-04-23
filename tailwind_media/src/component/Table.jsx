@@ -2,7 +2,7 @@ import React from "react";
 
 function Table() {
   return (
-    <div className="font-style" >
+    <div className="font-azonix" >
          <div className="flex space-x-7 font-semibold mt-12">
             <div className="flex-1 ">Position</div>
             <div className="flex-1">Name</div>

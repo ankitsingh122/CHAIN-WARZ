@@ -19,7 +19,7 @@ function Winner() {
      
 
   return (
-    <div className='bg-custom w-screen h-full font-style'>
+    <div className='bg-custom w-screen h-full font-azonix'>
         
         <div className='flex justify-center '>
             <div className='flex justify-center mt-10'><NavBar/></div>

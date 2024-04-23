@@ -8,7 +8,7 @@ function works() {
     <div className=" bg-custom w-screen h-full">
       <div className="flex justify-center">
         <div
-          className=" text-white md:text-6xl text-4xl font-style font-bold mt-20 mx-64"
+          className=" text-white md:text-6xl text-4xl font-azonix font-bold mt-20 mx-64"
           data-aos="fade-up"
         >
           HOW IT WORKS
@@ -25,7 +25,7 @@ function works() {
             />
 
             <div
-              className="w-1/2  text-white md:text-4xl  font-mono font-semibold flex flex-col items-center justify-center"
+              className="w-1/2  text-white md:text-4xl  font-azonix font-semibold flex flex-col items-center justify-center"
               data-aos="slide-left"
             >
               <span className=" border px-2 rounded-lg border-white">1</span>
@@ -42,7 +42,7 @@ function works() {
               alt=""
             />
             <div
-              className="w-1/2  justify-start text-white md:text-4xl  font-mono font-semibold flex flex-col items-center mx-24 "
+              className="w-1/2  justify-start text-white md:text-4xl  font-azonix font-semibold flex flex-col items-center mx-24 "
               data-aos="slide-left"
             >
               <span className=" border px-2 rounded-lg border-white">2</span>
@@ -59,7 +59,7 @@ function works() {
               alt=""
             />
             <div
-              className="w-1/2  text-white md:text-4xl font-mono font-semibold flex flex-col items-center justify-center mx-24 "
+              className="w-1/2  text-white md:text-4xl font-azonix font-semibold flex flex-col items-center justify-center mx-24 "
               data-aos="slide-left"
             >
               <span className=" border px-2 rounded-lg border-white">3</span>

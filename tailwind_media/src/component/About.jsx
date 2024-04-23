@@ -5,7 +5,7 @@ function About() {
     <div className="bg-custom w-screen h-full flex justify-center">
       <div className="bg-gradient-to-tr from-blue-900 via-blue-900 to-blue-500 lg:py-44 py-36 lg:px-40  rounded-3xl mt-24 lg:mx-14 mx-8 ">
         <div className="py-40">
-          <div className="lg:text-6xl text-4xl text-center font-style font-bold -my-72 text-white ">
+          <div className="lg:text-6xl text-4xl text-center font-azonix font-bold -my-72 text-white ">
             <span className="md:text-8xl text-4xl" data-aos="fade-top">
               ABOUT CHAINWARZ{" "}
             </span>
@@ -22,7 +22,7 @@ function About() {
           </div>
 
           <p
-            className="mt-80 text-center lg:text-2xl mx-3 font-style text-white uppercase"
+            className="mt-80 text-center lg:text-xl mx-3 font-azonix text-white uppercase"
             data-aos="zoom-in-up"
           >
             Chain Warz is an innovative sweepstakes lottery platform set in a
@@ -34,7 +34,7 @@ function About() {
           </p>
 
           <p
-            className="mt-6 text-center lg:text-2xl mx-3 font-style text-white uppercase"
+            className="mt-6 text-center lg:text-xl mx-3 font-azonix text-white uppercase"
             data-aos="zoom-in-up"
           >
             At Chain Warz, we use cutting-edge technology to ensure every game
@@ -47,7 +47,7 @@ function About() {
           </p>
 
           <p
-            className="mt-6 text-center lg:text-2xl mx-3 font-style text-white uppercase"
+            className="mt-6 text-center lg:text-xl mx-3 font-azonix text-white uppercase"
             data-aos="zoom-in-up"
           >
             To further enhance our gaming experience, we proudly integrate AI
@@ -56,7 +56,7 @@ function About() {
           </p>
 
           <p
-            className="mt-6 text-center lg:text-2xl mx-3 font-style text-white uppercase"
+            className="mt-6 text-center lg:text-xl mx-3 font-azonix text-white uppercase"
             data-aos="zoom-in-up"
           >
             Stakers of our NFT Founders Pass can enjoy exclusive rewards and
@@ -67,7 +67,7 @@ function About() {
           </p>
 
           <p
-            className="mt-6 text-center lg:text-2xl mx-3 font-style text-white uppercase"
+            className="mt-6 text-center lg:text-xl mx-3 font-azonix text-white uppercase"
             data-aos="zoom-in-up"
           >
             We are dedicated to cultivating a vibrant and engaged community of
@@ -80,7 +80,7 @@ function About() {
         </div>
         <div className="flex justify-center -my-20">
           <div className="bg-white  w-max rounded-3xl">
-            <button className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-style ">
+            <button className=" bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text  text-4xl rounded-lg  py-3 px-4 font-azonix ">
               OPENSEA
             </button>
           </div>

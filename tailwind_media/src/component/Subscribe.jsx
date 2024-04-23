@@ -28,7 +28,7 @@ function Subscribe() {
     <div className="bg-custom w-screen h-full">
       <div className="flex justify-center">
         <div className="bg-gradient-to-tr from-blue-900 via-blue-900 to-blue-500 mt-24 w-screen h-full mx-14  rounded-lg flex ">
-          <div className="lg:mx-44 mx-8  font-style font-semibold text-white  ">
+          <div className="lg:mx-44 mx-8  font-azonix font-semibold text-white  ">
             <div>
               <div className="lg:text-8xl text-4xl  font-bold md:mt-56 mt-10 ">
                 SUBSCRIBE
@@ -53,7 +53,7 @@ function Subscribe() {
             >
               <button
                 onClick={handleSubmit}
-                className="bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text text-2xl rounded-lg py-3 px-3 font-style"
+                className="bg-gradient-to-br from-red-500 via-purple-500 to-blue-500 inline-block text-transparent bg-clip-text text-2xl rounded-lg py-3 px-3 font-azonix"
               >
                 SUBSCRIBE
               </button>

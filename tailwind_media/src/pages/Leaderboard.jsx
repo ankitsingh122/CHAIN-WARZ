@@ -8,7 +8,7 @@ import Join from '../component/Join'
 function Leaderboard() {
   return (
      
-      <div className='w-screen h-full bg-[#070224] text-white font-style '>
+      <div className='w-screen h-full bg-[#070224] text-white font-azonix '>
         <div className='flex justify-center '>
          <div className='flex justify-center mt-10'><NavBar/></div>
         </div>
