@@ -5,15 +5,11 @@ import "aos/dist/aos.css";
 import PageError from "./pages/PageError";
 import LandingPage from "./pages/LandingPage";
 import Leaderboard from "./pages/Leaderboard";
-import Winner from './pages/Winner'
-import Battle from './pages/Battle'
-import BossFight from './pages/BossFight'
-
+import Winner from "./pages/Winner";
+import Battle from "./pages/Battle";
+import BossFight from "./pages/BossFight";
 
 const App = () => {
-
-
-  
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -22,8 +18,6 @@ const App = () => {
 
   return (
     <>
-     
-
       <Router>
         <div className="overflow-x-hidden">
           <Routes>

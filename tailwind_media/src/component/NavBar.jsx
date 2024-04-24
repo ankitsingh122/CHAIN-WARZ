@@ -7,12 +7,11 @@ import Logo from "../assets/Logo.png";
 import Cat from "../assets/Cat.png";
 import Wallet from "../assets/Wallet.png";
 import Coin from "../assets/Coin.png";
-import {  ConnectWallet } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAllowed, setIsAllowed] = useState(false);
-
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,10 +27,6 @@ function NavBar() {
     }
   };
 
-  
-
-
-
   return (
     <>
       <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between items-center ">
@@ -39,23 +34,29 @@ function NavBar() {
           <img className="md:w-32 lg:w-44" src={Logo} alt="" />
         </Link>
         <div className="hidden md:flex lg:space-x-8 space-x-2 lg:text-md  mt-2 lg:mx-14 mx-2 items-center font-azonix font-semibold  lg:text-sm text-xs ">
-          <div onClick={toggleAllowed} className="cursor-pointer">
+          <div
+            onClick={toggleAllowed}
+            className="cursor-pointer hover:text-gray-500"
+          >
             AllowList
           </div>
-          <Link to="/Winner" className="cursor-pointer ">
+          <Link to="/Winner" className="cursor-pointer hover:text-gray-500 ">
             Winner
           </Link>
-          <Link to="/leaderboard" className="cursor-pointer ">
+          <Link
+            to="/leaderboard"
+            className="cursor-pointer hover:text-gray-500"
+          >
             Leaderboard
           </Link>
-          <Link to="/Battle" className="cursor-pointer ">
+          <Link to="/Battle" className="cursor-pointer hover:text-gray-500">
             Battle now
           </Link>
         </div>
 
         <div className="md:flex space-x-4">
           <div className=" font-azonix mt-2 md:block hidden ">
-            <ConnectWallet btnTitle="CONNECT" modalSize="compact" />
+            <ConnectWallet btnTitle="CONNECT" modalSize="compact" style={{}} />
           </div>
           <div className="hidden md:flex text-xl  my-2 py-3 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center">
             <IoMdPerson className="text-white items-center " />
@@ -132,9 +133,9 @@ function NavBar() {
                 <div className="text-white text-sm mb-4 text-center font-azonix font-bold">
                   CHOOSE A WALLET <br /> CONNECTION METHOD
                 </div>
-                <div onClick={handleMetamaskClick}
+                <div
+                  onClick={handleMetamaskClick}
                   className=" bg-blue-700 rounded-lg flex justify-between space-x-20 cursor-pointer "
-                  
                 >
                   <img src={Cat} alt="" />
                   <div className="md:text-xl text-sm md:mt-5 mt-8 pr-3 font-azonix">
