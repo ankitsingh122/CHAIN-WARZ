@@ -8,12 +8,7 @@ import Leaderboard from "./pages/Leaderboard";
 import Winner from './pages/Winner'
 import Battle from './pages/Battle'
 import BossFight from './pages/BossFight'
-import { createWallet } from "thirdweb/wallets";
 
-
-
-
-const wallets = [createWallet("io.metamask")];
 
 const App = () => {
 

@@ -41,3 +41,10 @@
             2px 2px 0 black;
     }
 }
+
+.gradient-background {
+    background: linear-gradient(to bottom right, #ff0000, #800080, #0000ff);
+}
+
+
+

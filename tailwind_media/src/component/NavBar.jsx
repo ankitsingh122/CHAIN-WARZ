@@ -7,14 +7,12 @@ import Logo from "../assets/Logo.png";
 import Cat from "../assets/Cat.png";
 import Wallet from "../assets/Wallet.png";
 import Coin from "../assets/Coin.png";
-import { createWallet } from "thirdweb/wallets";
-import { ConnectEmbed, ConnectWallet } from "@thirdweb-dev/react";
-import { Base } from "@thirdweb-dev/chains";
+import {  ConnectWallet } from "@thirdweb-dev/react";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAllowed, setIsAllowed] = useState(false);
-  const [showComponent, setShowComponent] = useState(false);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -30,49 +28,37 @@ function NavBar() {
     }
   };
 
-  const handleClick = () => {
-    setShowComponent(true);
-    setIsAllowed(false); // Close the isAllowed state
-  };
-
   
 
-  const displayBalanceToken = {
-    1: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-    [Base.chainId]: "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-  };
+
 
   return (
     <>
-      <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between ">
+      <nav className="fixed z-50 py-4   w-max bg-white text-black   rounded-3xl px-5  flex justify-between items-center ">
         <Link to="/">
           <img className="md:w-32 lg:w-44" src={Logo} alt="" />
         </Link>
-        <div className="hidden md:flex lg:space-x-8 space-x-2 lg:text-md  mt-2 lg:mx-14 mx-2  py-2 font-azonix font-semibold  lg:text-sm text-xs">
-          <button onClick={toggleAllowed} className="cursor-pointer -mt-3 ">
+        <div className="hidden md:flex lg:space-x-8 space-x-2 lg:text-md  mt-2 lg:mx-14 mx-2 items-center font-azonix font-semibold  lg:text-sm text-xs ">
+          <div onClick={toggleAllowed} className="cursor-pointer">
             AllowList
-          </button>
-          <Link to="/Winner" className="cursor-pointer">
+          </div>
+          <Link to="/Winner" className="cursor-pointer ">
             Winner
           </Link>
-          <Link to="/leaderboard" className="cursor-pointer">
+          <Link to="/leaderboard" className="cursor-pointer ">
             Leaderboard
           </Link>
-          <Link to="/Battle" className="cursor-pointer">
+          <Link to="/Battle" className="cursor-pointer ">
             Battle now
           </Link>
         </div>
 
         <div className="md:flex space-x-4">
-          <button
-            onClick={toggleAllowed}
-            className="hidden md:block md:bg-gradient-to-r from-blue-400 to-purple-500  lg:px-3 lg:py-3.5 px-2  md:rounded-md md:cursor-pointer md:text-center lg:pr-5 lg:pl-5 md:font-azonix lg:text-lg text-xs text-white"
-          >
-            Connect
-          </button>
-
-          <div className="hidden md:flex text-3xl  py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer md:pt-2 pt-Z">
-            <IoMdPerson className="text-white mt-1 w-6" />
+          <div className=" font-azonix mt-2 md:block hidden ">
+            <ConnectWallet btnTitle="CONNECT" modalSize="compact" />
+          </div>
+          <div className="hidden md:flex text-xl  my-2 py-2 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center">
+            <IoMdPerson className="text-white items-center " />
           </div>
 
           <button
@@ -146,9 +132,9 @@ function NavBar() {
                 <div className="text-white text-sm mb-4 text-center font-azonix font-bold">
                   CHOOSE A WALLET <br /> CONNECTION METHOD
                 </div>
-                <div
-                  onClick={handleClick}
+                <div onClick={handleMetamaskClick}
                   className=" bg-blue-700 rounded-lg flex justify-between space-x-20 cursor-pointer "
+                  
                 >
                   <img src={Cat} alt="" />
                   <div className="md:text-xl text-sm md:mt-5 mt-8 pr-3 font-azonix">
@@ -181,11 +167,6 @@ function NavBar() {
           )}
         </div>
       </nav>
-      <div className="mt-44 fixed z-10">
-        {showComponent && (
-          <ConnectWallet displayBalanceToken={displayBalanceToken} />
-        )}
-      </div>
     </>
   );
 }
