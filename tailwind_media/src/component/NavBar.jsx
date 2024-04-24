@@ -57,7 +57,7 @@ function NavBar() {
           <div className=" font-azonix mt-2 md:block hidden ">
             <ConnectWallet btnTitle="CONNECT" modalSize="compact" />
           </div>
-          <div className="hidden md:flex text-xl  my-2 py-2 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center">
+          <div className="hidden md:flex text-xl  my-2 py-3 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center">
             <IoMdPerson className="text-white items-center " />
           </div>
 
