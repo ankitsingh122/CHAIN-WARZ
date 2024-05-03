@@ -14,15 +14,18 @@ function Subscribe() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-  const handleSubmit = () => {
-    if (!isValid) {
-      alert("Check email!");
-      setEmail("");
-    } else {
-      setEmail("");
-      setIsValid(false);
-    }
-  };
+
+   const handleSubmit = () => {
+     if (!isValid) {
+       alert("Check email!");
+       setEmail("");
+     } else {
+       setEmail("");
+       setIsValid(false);
+     }
+   };
+ 
+ 
 
   return (
     <div className="bg-custom w-screen h-full">

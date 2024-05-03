@@ -35,7 +35,7 @@ function BattleCard(props) {
   return (
     <>
       
-        <div className="border mt-5" data-aos="slide-right">
+        <div className="border mt-5 rounded-xl" data-aos="slide-right">
           <div className="flex justify-center mt-3 ml-3">
             <img className="" src={props.img} alt="" /> 
           </div>
