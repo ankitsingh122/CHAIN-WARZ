@@ -8,6 +8,8 @@ import Leaderboard from "./pages/Leaderboard";
 import Winner from "./pages/Winner";
 import Battle from "./pages/Battle";
 import BossFight from "./pages/BossFight";
+import Profile from "./pages/Profile";
+
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +28,7 @@ const App = () => {
             <Route path="/Winner" element={<Winner />} />
             <Route path="/Battle" element={<Battle />} />
             <Route path="/BossFight" element={<BossFight />} />
+            <Route path="/Profile" element={<Profile/>} />
 
             <Route path="*" element={<PageError />} />
           </Routes>

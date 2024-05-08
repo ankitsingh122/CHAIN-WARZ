@@ -8,10 +8,13 @@ import Cat from "../assets/Cat.png";
 import Wallet from "../assets/Wallet.png";
 import Coin from "../assets/Coin.png";
 import { ConnectWallet } from "@thirdweb-dev/react";
+import { useSelector } from "react-redux";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAllowed, setIsAllowed] = useState(false);
+
+  const userData = useSelector((state) => state.users);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -57,10 +60,14 @@ function NavBar() {
         <div className="md:flex space-x-4">
           <div className=" font-azonix mt-2 md:block hidden ">
             <ConnectWallet btnTitle="CONNECT" modalSize="compact" style={{}} />
+            {userData.user?.name}
           </div>
-          <div className="hidden md:flex text-xl  my-2 py-3 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center">
+          <Link
+            to="/Profile"
+            className="hidden md:flex text-xl  my-2 py-3 px-3  bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl text-gray-800 cursor-pointer items-center "
+          >
             <IoMdPerson className="text-white items-center " />
-          </div>
+          </Link>
 
           <button
             onClick={toggleMenu}
