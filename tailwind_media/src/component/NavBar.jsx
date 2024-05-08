@@ -60,7 +60,7 @@ function NavBar() {
         <div className="md:flex space-x-4">
           <div className=" font-azonix mt-2 md:block hidden ">
             <ConnectWallet btnTitle="CONNECT" modalSize="compact" style={{}} />
-            {userData.user?.name}
+            <span className="mx-1">{userData.user?.name}</span>
           </div>
           <Link
             to="/Profile"

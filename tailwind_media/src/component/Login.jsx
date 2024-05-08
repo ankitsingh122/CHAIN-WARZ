@@ -7,6 +7,7 @@ function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+   const [isLogin, setLogin] = useState(false);
 
   const Dispatch = useDispatch();
 
@@ -20,7 +21,16 @@ function Login() {
         loggedIn: true,
       })
     );
+    toggleLogin();
+
+
   };
+  
+  
+  const toggleLogin = () => {
+     setLogin(!isLogin);
+   };
+
 
   return (
     <>
@@ -60,6 +70,7 @@ function Login() {
           </button>
         </div>
       </form>
+      
     </>
   );
 }

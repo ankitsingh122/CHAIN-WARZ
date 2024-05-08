@@ -53,7 +53,15 @@ function Profile() {
           </div>
         </div>
         <div className="flex justify-end mx-96">
-          <img className=' cursor-pointer' onClick={handleLogout} src={Logs} alt="" />
+          <img
+            className=" cursor-pointer"
+            onClick={handleLogout}
+            src={Logs}
+            alt=""
+          />
+        </div>
+        <div className='mx-96 mt-10 '>
+          < hr />
         </div>
 
         <div className="lg:flex justify-center  mx-2 lg:space-x-5 mt-20">
