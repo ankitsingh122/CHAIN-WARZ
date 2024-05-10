@@ -1,45 +1,39 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../Store/Slice/UserSlice";
+import { login2 } from "../Store/Slice/Player2";
+import PropTypes from "prop-types";
 
-function Login() {
+function Login({ player, closeModal }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-   const [isLogin, setLogin] = useState(false);
-
-  const Dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Dispatch(
-      login({
-        name: name,
-        email: email,
-        password: password,
-        loggedIn: true,
-      })
-    );
-    toggleLogin();
+    const formData = {
+      name: name,
+      email: email,
+      password: password,
+      loggedIn: true,
+    };
 
-
+    if (player === 1) {
+      dispatch(login(formData));
+    } else if (player === 2) {
+      dispatch(login2(formData));
+    }
+    closeModal(); 
   };
-  
-  
-  const toggleLogin = () => {
-     setLogin(!isLogin);
-   };
-
 
   return (
-    <>
+    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <h1 className="mt-2">Login Here</h1>
       <form onSubmit={(e) => handleSubmit(e)}>
-        <h1 className="mt-2">Login Here</h1>
-
         <div className="mt-2">
           <input
-            className=" rounded-md text-center"
+            className="rounded-md text-center"
             type="name"
             placeholder="Name"
             value={name}
@@ -48,7 +42,7 @@ function Login() {
         </div>
         <div className="mt-2">
           <input
-            className=" rounded-md text-center"
+            className="rounded-md text-center"
             type="email"
             placeholder="Email"
             value={email}
@@ -57,7 +51,7 @@ function Login() {
         </div>
         <div className="mt-2">
           <input
-            className=" rounded-md text-center"
+            className="rounded-md text-center"
             type="password"
             placeholder="Password"
             value={password}
@@ -65,14 +59,19 @@ function Login() {
           />
         </div>
         <div className="mt-2">
-          <button onClick={handleSubmit} type="submit">
-            Submit
-          </button>
+          <button type="submit">Submit</button>
         </div>
       </form>
-      
-    </>
+    </div>
   );
 }
 
+Login.propTypes = {
+  player: PropTypes.number.isRequired,
+  closeModal: PropTypes.func.isRequired,
+};
+
 export default Login;
+
+
+

@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 function Table() {
 
 const userData = useSelector((state) => state.users);
+const player2 = useSelector((state) => state.player2);
 
 
   return (
@@ -37,7 +38,7 @@ const userData = useSelector((state) => state.users);
         <div className="flex-justify-between">
           <div className="flex space-x-7">
             <div className="flex-1">1</div>
-            <div className="flex-1">Rohan</div>
+            <div className="flex-1">{player2.player2?.name || "Player-2"}</div>
             <div className="flex-1 text-orange-700">2x</div>
             <div className="flex-1 text-lime-500">75%</div>
             <div className="flex-1 text-cyan-500">x23d2jeif</div>
