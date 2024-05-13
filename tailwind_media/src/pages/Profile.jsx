@@ -1,4 +1,4 @@
-import React, { useState , useCallback } from 'react'
+import React, { useState } from 'react'
 import NavBar from '../component/NavBar'
 import Join from '../component/Join';
 import BattleCard from '../component/BattleCard';
@@ -20,10 +20,10 @@ function Profile() {
   const [isLogin, setLogin] = useState(false);
   const [isLogin2, setLogin2] = useState(false);
 
-   const closeModal = useCallback(() => {
+   const closeModal = () => {
      setLogin(false);
      setLogin2(false);
-   }, []);
+   };
 
   const toggleLogin = () => {
     setLogin(!isLogin);
@@ -36,7 +36,7 @@ function Profile() {
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
-  };
+  };        
   const handleLogout2 = (e) => {
     e.preventDefault();
     dispatch(logout2());
@@ -50,7 +50,7 @@ function Profile() {
             <NavBar />
           </div>
         </div>
-        <div className="flex mx-96 mt-44  ">
+        <div className="flex mx-96 mt-44">
           <div
             onClick={toggleLogin}
             className="text-white bg-gradient-to-tr from-red-500 via-purple-600 to-blue-500 py-10 px-10  w-max   rounded-3xl cursor-pointer mt-10"
@@ -66,6 +66,7 @@ function Profile() {
             </div>
           </div>
         </div>
+        
         <div className="flex justify-end mx-96">
           <img
             className=" cursor-pointer"
@@ -99,7 +100,7 @@ function Profile() {
           />
         </div>
 
-        <div className="mx-96 mt-10 ">
+        <div className="mx-96 mt-32 ">
           <hr />
         </div>
 
@@ -117,7 +118,6 @@ function Profile() {
         >
           <div className="bg-purple-500 rounded-lg border border-stone-700 px-4 py-6 text-center shadow-lg text-md ">
             <Login player={1} closeModal={closeModal} />
-            
           </div>
         </div>
       )}
@@ -128,7 +128,6 @@ function Profile() {
         >
           <div className="bg-purple-500 rounded-lg border border-stone-700 px-4 py-6 text-center shadow-lg text-md ">
             <Login player={2} closeModal={closeModal} />
-           
           </div>
         </div>
       )}

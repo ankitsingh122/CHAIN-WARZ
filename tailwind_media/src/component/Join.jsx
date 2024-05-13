@@ -22,13 +22,13 @@ function Join() {
         </div>
         <div className="flex justify-between mt-10 mx-10  md:mx-1 ">
           <img
-            className="border md:px-10 px-5 md:py-10 py-5 rounded-lg"
+            className="border md:px-10 px-5 md:py-10 py-5 rounded-lg cursor-pointer"
             data-aos="fade-left"
             src={Pk}
             alt=" "
           />
           <img
-            className="border md:px-10 px-5 md:py-10 py-5  rounded-lg"
+            className="border md:px-10 px-5 md:py-10 py-5  rounded-lg cursor-pointer"
             data-aos="fade-right"
             src={Discord}
             alt=""

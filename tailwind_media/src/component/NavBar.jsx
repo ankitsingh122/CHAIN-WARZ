@@ -28,6 +28,7 @@ function NavBar() {
     if (window.ethereum) {
       window.ethereum.request({ method: "eth_requestAccounts" });
     }
+    toggleAllowed();
   };
 
   return (
@@ -149,7 +150,7 @@ function NavBar() {
                     METAMASK
                   </div>
                 </div>
-                <div className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 cursor-pointer ">
+                <div onClick={handleMetamaskClick} className=" bg-blue-700 rounded-lg flex justify-between space-x-20 mt-4 cursor-pointer ">
                   {" "}
                   <img src={Coin} alt="" />
                   <div className="md:text-xl text-sm md:mt-5 mt-8 pr-3 font-azonix">
