@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Ap from "../assets/Ap.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Subscribe() {
   const [email, setEmail] = useState("");
@@ -17,11 +19,12 @@ function Subscribe() {
 
    const handleSubmit = () => {
      if (!isValid) {
-       alert("Check email!");
+       toast.error("Check email!");
        setEmail("");
      } else {
        setEmail("");
        setIsValid(false);
+       toast.success("Subscribed Successfully")
      }
    };
  
@@ -75,6 +78,7 @@ function Subscribe() {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 }
